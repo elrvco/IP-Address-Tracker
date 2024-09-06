@@ -1,0 +1,70 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin:0;
+}
+
+.main{
+  background-image: url("./images/background-image.jpg");
+  background-repeat: no-repeat;
+}
+
+
+.content,
+.form{
+  text-align: center;
+  
+}
+
+h1 {
+  height: 10vh;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+form {
+  height: 20vh;
+  padding-top: 2%;
+}
+
+.main > div:nth-child(2){
+  height: 70vh;
+}
+
+input{
+  width: 40%;
+  height: 40%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-width:0;
+  font-weight: 500;
+  font-size: 1.1rem;
+
+
+
+}
+
+button {
+  width: 4%;
+  height: 40%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-width:0;
+  font-weight: 800;
+  color: white;
+  background-color: grey;
+  
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+
