@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/IP-Adress-Tracker/static/css/main.9022b8e0.css",
-    "main.js": "/IP-Adress-Tracker/static/js/main.8847d75c.js",
-    "static/js/453.50c1aa97.chunk.js": "/IP-Adress-Tracker/static/js/453.50c1aa97.chunk.js",
-    "static/media/background-image.jpg": "/IP-Adress-Tracker/static/media/background-image.ae492a04c39a530c4ebb.jpg",
-    "index.html": "/IP-Adress-Tracker/index.html",
-    "main.9022b8e0.css.map": "/IP-Adress-Tracker/static/css/main.9022b8e0.css.map",
-    "main.8847d75c.js.map": "/IP-Adress-Tracker/static/js/main.8847d75c.js.map",
-    "453.50c1aa97.chunk.js.map": "/IP-Adress-Tracker/static/js/453.50c1aa97.chunk.js.map"
+    "main.css": "/IP-Address-Tracker/static/css/main.7b6d3adb.css",
+    "main.js": "/IP-Address-Tracker/static/js/main.55a8b69f.js",
+    "static/js/453.50c1aa97.chunk.js": "/IP-Address-Tracker/static/js/453.50c1aa97.chunk.js",
+    "static/media/background-image.jpg": "/IP-Address-Tracker/static/media/background-image.ae492a04c39a530c4ebb.jpg",
+    "index.html": "/IP-Address-Tracker/index.html",
+    "main.7b6d3adb.css.map": "/IP-Address-Tracker/static/css/main.7b6d3adb.css.map",
+    "main.55a8b69f.js.map": "/IP-Address-Tracker/static/js/main.55a8b69f.js.map",
+    "453.50c1aa97.chunk.js.map": "/IP-Address-Tracker/static/js/453.50c1aa97.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9022b8e0.css",
-    "static/js/main.8847d75c.js"
+    "static/css/main.7b6d3adb.css",
+    "static/js/main.55a8b69f.js"
   ]
 }
