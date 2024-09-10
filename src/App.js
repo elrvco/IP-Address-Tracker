@@ -15,25 +15,25 @@ function App() {
       return (
         <div className='content'> 
           <IpInfoContainer
-            ipAdress = 'Loading...'
+            ipAddress = 'Loading...'
             location = 'Loading...'
             timezone = 'Loading...'
-            isp = 'Loading...'
+            language = 'Loading...'
           />
         </div>
       )
-    } else if (ipData.status === "success"){
+    } else if (ipData.latitude !== undefined){
       return(
        <div className='content'> 
          <IpInfoContainer
-          ipAdress = {ipData.query}
-          location = {ipData.city + ipData.regionName + ipData.zip}
-          timezone = {ipData.timezone}
-          isp = {ipData.isp}
+          ipAddress = {ipData.ip}
+          location = { ipData.country_code +" " +  ipData.region + " " + ipData.postal}
+          timezone = {ipData.timezone + " "+ ipData.utc_offset}
+          language = {ipData.languages}
         />
         <Map
-          latitude = {ipData.lat}
-          longitude = {ipData.lon}
+          latitude = {ipData.latitude}
+          longitude = {ipData.longitude}
         />
        
       </div>
@@ -42,10 +42,10 @@ function App() {
       return (
       <div className='content'> 
         <IpInfoContainer
-          ipAdress = 'No info available'
+          ipAddress = 'No info available'
           location = 'No info available'
           timezone = 'No info available'
-          isp = 'No info available'
+          language = 'No info available'
         />
       </div>)
     }
@@ -63,7 +63,7 @@ function App() {
   
 
   useEffect(()=>{
-    fetch(`http://ip-api.com/json/${userInput}`)
+    fetch(`https://ipapi.co/${userInput}/json/`)
     .then(response => response.json())
     .then((ipData) => {
       setIpData(ipData);
@@ -75,11 +75,11 @@ function App() {
     return(
         <div className ="main"> {/* para componente map, pasar idData como prop */}
           <div className= 'form'>
-            <h1>IP Adress Tracker</h1>
+            <h1>IP Address Tracker</h1>
             <form onSubmit={submitHandler}>
                 <input 
                   id='ip'
-                  placeholder='Search for any Ip adress or domain'
+                  placeholder='Search for any Ip address or domain'
                   ref={inputRef} 
                   type="text" 
                 /> 

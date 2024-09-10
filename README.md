@@ -1,6 +1,6 @@
 # IP Address Tracker
 
-This is a **React-based** IP Address Tracker application that allows users to search for detailed geographical information about an IP address. The app fetches data from the `ip-api.com` API and displays the results on a map using the **Leaflet.js** library. Users can input an IP address and view the corresponding location on the map along with details like the city, region, timezone, and ISP.
+This is a **React-based** IP Address Tracker application that allows users to search for detailed geographical information about an IP address. The app fetches data from the `ipapi.co` API and displays the results on a map using the **Leaflet.js** library. Users can input an IP address and view the corresponding location on the map along with details like the city, region, timezone, and language.
 
 ## Features
 
@@ -13,13 +13,13 @@ This is a **React-based** IP Address Tracker application that allows users to se
   - Region
   - ZIP code
   - Timezone
-  - ISP (Internet Service Provider)
+  - Language
   
 ## Technologies Used
 
 - **React**: JavaScript library for building user interfaces.
 - **Leaflet.js**: Open-source JavaScript library for interactive maps.
-- **ip-api.com**: API to fetch geolocation data for IP addresses.
+- **ipapi.co**: API to fetch geolocation data for IP addresses.
 - **CSS**: For styling and responsiveness.
 
 ## Getting Started
@@ -79,10 +79,10 @@ Make sure you have **Node.js** and **npm** installed on your machine. You can do
 ```
 
 ## API Used
- The app uses the ip-api.com API to retrieve data about the IP address, including latitude, longitude, city, region, and more. No API key is required.
+ The app uses the ipapi.co API to retrieve data about the IP address, including latitude, longitude, city, region, and more. No API key is required.
 
  ### API Endpoint
- http://ip-api.com/json/{ipAddress}
+ https://ipapi.co/${userInput}/json/
 
 
 

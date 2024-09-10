@@ -3,8 +3,8 @@ function IpInfoContainer(props){
     return(
         <div className='info-container'>
             <div className="box a">
-                <p>IP ADRESS</p>
-                <p>{props.ipAdress}</p>
+                <p>IP ADDRESS</p>
+                <p>{props.ipAddress}</p>
             </div>
             <div className="box b">
                 <p>LOCATION</p>
@@ -15,8 +15,8 @@ function IpInfoContainer(props){
                 <p>{props.timezone}</p>
             </div>
             <div className="box d">
-                <p>ISP</p>
-                <p>{props.isp}</p>
+                <p>Language</p>
+                <p>{props.language}</p>
             </div>
             
             
